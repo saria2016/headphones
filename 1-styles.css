@@ -272,7 +272,7 @@ body {
 } 
 /* WHAT WE DO */ 
  
-.tasks { 
+.container { 
   max-block-size: 1920px; 
   max-inline-size: 100%; 
   text-align: center; 
@@ -280,15 +280,14 @@ body {
 .tasks_container { 
   margin: 30px auto; 
 } 
-.tasks-title { 
+.title { 
   font-family: var(--font-family-bold); 
   font-size: var(--font-size-medium); 
   margin: 60px auto; 
   margin-block-end: 40px; 
 } 
  
-.tasks-detail { 
-  max-inline-size: 575px; 
+.container-p { 
   margin: auto; 
   line-height: 25px; 
   font-family: var(--font-family-base); 
