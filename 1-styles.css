@@ -252,6 +252,7 @@ body {
   font-weight: var(--font-weight-thin); 
   line-height: 30px; 
 } 
+ 
 .btn { 
   border: 1px #FF6565 solid; 
   border-radius: 25px; 

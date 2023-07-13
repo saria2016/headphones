@@ -239,6 +239,7 @@ body {
 .hero-1 { 
   font-family: var(--font-family-title); 
   font-size: var(--font-size-x-large); 
+  padding-top: 81px;
 } 
 .hero-2 { 
   font-family: var(--font-family-base); 
@@ -254,7 +255,6 @@ body {
   line-height: 30px; 
 } 
  
-/* BUTTON */ 
  
 .btn { 
     border: 1px #FF6565 solid; 
