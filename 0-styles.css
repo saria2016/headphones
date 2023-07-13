@@ -31,8 +31,8 @@
  
     --white: white; 
     --primary: #FF6565; 
-    --image-gradiant: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162986 60%); 
-    --linear-gradient: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6) 0%, #07162980 20%); 
+    --image-gradiant: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162900 70%); 
+    --linear-gradient: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, 0.211) 0%, #07162900 30%); 
 }  
  
   @font-face { 
@@ -194,9 +194,7 @@ body {
 .bar-icon::before { 
   inline-size: 20px; 
   inset-block-end: 4px; 
-} 
-/* Screen will display "X" when navbar is clicked */ 
- 
+}  
 .header_container input:checked + .nav-icon .bar-icon::after { 
   transform: rotate(-45deg); 
   inset-block-start: 0; 
@@ -206,7 +204,6 @@ body {
   transform: rotate(45deg); 
   inset-block-end: 0; 
 } 
-/* Animation/positions for icon */ 
  
 .bar-icon, .bar-icon::after, .bar-icon::before { 
   block-size: 2px; 
@@ -221,9 +218,7 @@ body {
   transform: rotate(0); 
   transition: ease-out 0.3s; 
 } 
- 
-/* HERO */ 
- 
+  
 .hero { 
   background-image: var(--image-gradiant), url("./images/headphones_hero_1.jpg"); 
   background-size: 1920px 1080px; 
@@ -239,6 +234,7 @@ body {
 .hero-1 { 
   font-family: var(--font-family-title); 
   font-size: var(--font-size-x-large); 
+  padding-top: 81px;
 } 
 .hero-2 { 
   font-family: var(--font-family-base); 
@@ -257,14 +253,15 @@ body {
 /* BUTTON */ 
  
 .btn { 
-  border: none; 
+  border: 1px #FF6565 solid; 
   border-radius: 25px; 
   font-family: var(--font-family-base); 
   letter-spacing: .5px; 
   color: var(--white); 
-  block-size: 48px; 
+  block-size: 40px; 
   inline-size: 160px; 
   text-transform: uppercase; 
+  font-size: 12px;
 } 
  
 .btn-color { 
@@ -313,7 +310,8 @@ body {
   line-height: 25px; 
   max-inline-size: 200px; 
 } 
- 
+ /* Screen on Mobile*/
+
 @media screen and (max-width: 480px){ 
   .wrapper { 
     inline-size: 400px; 
@@ -340,24 +338,9 @@ body {
     margin: 20px auto; 
     text-align: justify; 
   } 
-  .tasks { 
-    text-align: center; 
-    margin: 20px auto; 
-  } 
-  .tasks-column { 
-    margin: 40px auto; 
-  } 
-  .column-detail { 
-    font-family: var(--font-family-base); 
-    inline-size: 340px; 
-    margin-inline: auto; 
-  } 
-  .tasks-detail { 
-    inline-size: 340px; 
-  } 
 } 
  
-/* TABLET */ 
+ /* Screen on Tablet*/
  
 @media screen and (min-width: 768px) { 
   .wrapper { 
@@ -398,18 +381,9 @@ body {
     inline-size: 600px; 
     margin: 10px auto; 
   } 
-  .tasks_container { 
-    display: grid; 
-    column-gap: 30px; 
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-  } 
-  .column-detail { 
-    font-family: var(--font-family-base); 
-    line-height: 20px; 
-  } 
 } 
  
-/* DESKTOP */ 
+ /* Screen on Desktop*/
  
 @media screen and (min-width: 1024px) { 
   .wrapper { 
