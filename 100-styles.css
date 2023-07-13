@@ -199,8 +199,8 @@
 
    --white: white;
    --primary: #FF6565;
-   --image-gradiant: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162986 60%);
-   --linear-gradient: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, .6) 0%, #07162980 20%);
+   --image-gradiant: radial-gradient(99% 99% at 50% 0%, rgba(41, 48, 61, 0.0001) 0%, #07162900 70%); 
+   --linear-gradient: linear-gradient(rgba(0, 0, 0, .1), rgba(7, 22, 41, 0.211) 0%, #07162900 30%); 
  }
 
  @font-face {
@@ -281,26 +281,39 @@
  }
 
  .pentagon {
-   width: 100px;
-   height: 0;
-   border: 50px solid transparent;
-   border-bottom-color: var(--primary);
-   position: relative;
-   transform: none;
-   margin-right: 20px;
- }
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #FF6565;
+  position: relative;
+}
 
- .pentagon:before {
-   content: "+2%";
-   position: absolute;
-   top: -65px;
-   left: -50px;
-   width: 100px;
-   height: 0;
-   border: 50px solid transparent;
-   border-bottom-color: var(--primary);
-   transform: rotate(270deg);
- }
+.pentagon:before {
+  content: "+2%";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #FF6565;
+  transform: rotate(36deg);
+}
+
+.pentagon:after {
+  content: "+2%";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #FF6565;
+  transform: rotate(-36deg);
+}
 
  .pentagon span {
    position: absolute;
