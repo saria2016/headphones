@@ -59,17 +59,7 @@ body {
   width: 100%; 
   height: 100%; 
 } 
- 
-/* WRAPPER */ 
- 
-.wrapper { 
-  max-inline-size: 1000px; 
-  inline-size: 400px; 
-  margin: 0 auto; 
-} 
- 
-/* NAVBAR */ 
- 
+   
 .header { 
   min-block-size: 100px; 
   margin-block-end: 225px; 
@@ -192,7 +182,6 @@ body {
   line-height: 30px; 
 } 
  
-/* BUTTON */ 
  
 .btn { 
   border: 1px #FF6565 solid; 
@@ -213,45 +202,6 @@ body {
   box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.74); 
 } 
  
-/* WHAT WE DO */ 
- 
-.tasks { 
-  max-block-size: 1920px; 
-  max-inline-size: 100%; 
-  text-align: center; 
-} 
-.tasks_container { 
-  margin: 30px auto; 
-} 
-.tasks-title { 
-  font-family: var(--font-family-bold); 
-  font-size: var(--font-size-medium); 
-  margin: 60px auto; 
-  margin-block-end: 40px; 
-} 
- 
-.tasks-detail { 
-  max-inline-size: 575px; 
-  margin: auto; 
-  line-height: 25px; 
-  font-family: var(--font-family-base); 
-} 
-.tasks-column { 
-  margin-block-end: 100px; 
-  margin-top: 30px; 
-  margin-inline: auto; 
-  max-inline-size: 200px; 
-} 
-.column-title { 
-  margin: 5px auto; 
-  font-family: var(--font-family-title); 
-} 
-.column-detail { 
-  font-family: var(--font-family-base); 
-  font-weight: var(--font-weight-thin); 
-  line-height: 25px; 
-  max-inline-size: 200px; 
-} 
  /* Screen on Mobile*/
 
 @media screen and (max-width: 480px){ 
