@@ -59,7 +59,14 @@ body {
   width: 100%; 
   height: 100%; 
 } 
-   
+.wrapper { 
+  max-inline-size: 1000px; 
+  inline-size: 400px; 
+  margin: 0 auto; 
+} 
+  
+/* header section */ 
+ 
 .header { 
   min-block-size: 100px; 
   margin-block-end: 225px; 

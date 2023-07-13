@@ -194,7 +194,9 @@ body {
 .bar-icon::before { 
   inline-size: 20px; 
   inset-block-end: 4px; 
-}  
+} 
+/* Screen will display "X" when navbar is clicked */ 
+ 
 .header_container input:checked + .nav-icon .bar-icon::after { 
   transform: rotate(-45deg); 
   inset-block-start: 0; 
@@ -204,6 +206,7 @@ body {
   transform: rotate(45deg); 
   inset-block-end: 0; 
 } 
+/* Animation/positions for icon */ 
  
 .bar-icon, .bar-icon::after, .bar-icon::before { 
   block-size: 2px; 
@@ -218,7 +221,7 @@ body {
   transform: rotate(0); 
   transition: ease-out 0.3s; 
 } 
-  
+ 
 .hero { 
   background-image: var(--image-gradiant), url("./images/headphones_hero_1.jpg"); 
   background-size: 1920px 1080px; 
@@ -249,9 +252,6 @@ body {
   font-weight: var(--font-weight-thin); 
   line-height: 30px; 
 } 
- 
-/* BUTTON */ 
- 
 .btn { 
   border: 1px #FF6565 solid; 
   border-radius: 25px; 
@@ -270,7 +270,6 @@ body {
 .btn-shadow { 
   box-shadow: 3px 15px 30px rgba(0, 0, 0, 0.74); 
 } 
- 
 /* WHAT WE DO */ 
  
 .tasks { 
@@ -310,8 +309,7 @@ body {
   line-height: 25px; 
   max-inline-size: 200px; 
 } 
- /* Screen on Mobile*/
-
+ 
 @media screen and (max-width: 480px){ 
   .wrapper { 
     inline-size: 400px; 
@@ -338,9 +336,24 @@ body {
     margin: 20px auto; 
     text-align: justify; 
   } 
+  .tasks { 
+    text-align: center; 
+    margin: 20px auto; 
+  } 
+  .tasks-column { 
+    margin: 40px auto; 
+  } 
+  .column-detail { 
+    font-family: var(--font-family-base); 
+    inline-size: 340px; 
+    margin-inline: auto; 
+  } 
+  .tasks-detail { 
+    inline-size: 340px; 
+  } 
 } 
  
- /* Screen on Tablet*/
+/* TABLET */ 
  
 @media screen and (min-width: 768px) { 
   .wrapper { 
@@ -381,9 +394,18 @@ body {
     inline-size: 600px; 
     margin: 10px auto; 
   } 
+  .tasks_container { 
+    display: grid; 
+    column-gap: 30px; 
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  } 
+  .column-detail { 
+    font-family: var(--font-family-base); 
+    line-height: 20px; 
+  } 
 } 
  
- /* Screen on Desktop*/
+/* DESKTOP */ 
  
 @media screen and (min-width: 1024px) { 
   .wrapper { 
